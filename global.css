@@ -48,3 +48,16 @@ img {
 .allfilter {
     filter: sepia(80%) drop-shadow(10px 10px 10px #000) saturate(200%);
 }
+
+@keyframes hueRotateAnimation {
+    from {
+        filter: hue-rotate(0deg)
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.huerotateanimate {
+    animation: hueRotateAnimation 2s linear infinite;
+}
